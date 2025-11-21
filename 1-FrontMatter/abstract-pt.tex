@@ -8,44 +8,15 @@
 
 \typeout{NT FILE abstract-pt.tex}%
 
-Independentemente da língua em que a dissertação está escrita, geralmente esta contém pelo menos dois resumos: um resumo na mesma língua do texto principal e outro resumo numa outra língua.
+A computação em nuvem tornou-se um elemento central dos sistemas de software modernos, oferecendo às organizações uma flexibilidade, escalabilidade e eficiência de custos sem precedentes. À medida que as empresas transitam cada vez mais de infraestruturas locais para arquiteturas nativas da nuvem (\emph{cloud-native}), as aplicações \emph{desktop} tradicionais enfrentam limitações crescentes em termos de acessibilidade e integração com serviços distribuídos. As soluções baseadas na \emph{web}, suportadas por plataformas de nuvem elásticas, permitem uma disponibilidade contínua, melhores práticas de segurança e \emph{pipelines} de implementação simplificados. Esta mudança de paradigma estabeleceu a computação em nuvem não apenas como uma tendência tecnológica, mas como um modelo padrão para o fornecimento de software fiável e centrado no utilizador em larga escala.
 
-A ordem dos resumos varia de acordo com a escola. Se a sua escola tiver regulamentos específicos sobre a ordem dos resumos, o template (\LaTeX) \gls{novathesis} irá respeitá-los. Caso contrário, a regra padrão no template \gls{novathesis} é ter em primeiro lugar o resumo \emph{no mesmo idioma do texto principal} e depois o resumo \emph{no outro idioma}. Por exemplo, se a dissertação for escrita em português, a ordem dos resumos será primeiro o português e depois o inglês, seguido do texto principal em português. Se a dissertação for escrita em inglês, a ordem dos resumos será primeiro em inglês e depois em português, seguida do texto principal em inglês.
-%
-No entanto, esse pedido pode ser personalizado adicionando um dos seguintes ao arquivo \verb+5_packages.tex+.
+Esta tese apresenta o desenho e a migração do \sysname, uma aplicação \emph{desktop} em Java 8 originalmente construída para ambientes de rede local, para uma aplicação \emph{web} moderna alojada na nuvem. O \sysname{} é uma plataforma responsável pela emissão de documentos de faturação, geração e comunicação de ficheiros \emph{Standard Audit File for Tax} (SAF-T PT) à Autoridade Tributária, submissão de declarações de Imposto do Selo e integração de dados de faturação com sistemas bancários e de Gestão de Relacionamento com o Cliente através de \emph{web services}. O trabalho inclui a definição de uma arquitetura baseada na nuvem escalável e segura, o redesenho do sistema numa aplicação \emph{web} modular e a implementação de uma prova de conceito que valida a abordagem proposta. Esta migração aborda os desafios de adaptar uma solução baseada em \emph{desktop} e de implementação local a um ambiente distribuído e orientado a serviços, preservando simultaneamente a robustez e a fiabilidade exigidas pelo seu contexto operacional. A solução resultante demonstra como aplicações \emph{desktop} locais podem ser transformadas com sucesso para satisfazer as exigências dos ecossistemas modernos habilitados pela nuvem.
 
-\begin{verbatim}
-    \abstractorder(<MAIN_LANG>):={<LANG_1>,...,<LANG_N>}
-\end{verbatim}
-
-Por exemplo, para um documento escrito em Alemão com resumos em Alemão, Inglês e Italiano (por esta ordem), pode usar-se:
-\begin{verbatim}
-    \ntsetup{abstractorder={de={de,en,it}}}
-\end{verbatim}
-
-Relativamente ao seu conteúdo, os resumos não devem ultrapassar uma página e frequentemente tentam responder às seguintes questões (é imprescindível a adaptação às práticas habituais da sua área científica):
-
-\begin{enumerate}
-  \item Qual é o problema?
-  \item Porque é que é um problema interessante/desafiante?
-  \item Qual é a proposta de abordagem/solução?
-  \item Quais são as consequências/resultados da solução proposta?
-\end{enumerate}
-
-% E agora vamos fazer um teste com uma quebra de linha no hífen a ver se a \LaTeX\ duplica o hífen na linha seguinte se usarmos \verb+"-+… em vez de \verb+-+.
-%
-% zzzz zzz zzzz zzz zzzz zzz zzzz zzz zzzz zzz zzzz zzz zzzz zzz zzzz zzz zzzz comentar"-lhe zzz zzzz zzz zzzz
-%
-% Sim!  Funciona! :)
-
-% Palavras-chave do resumo em Português
-% \begin{keywords}
-% Palavra-chave 1, Palavra-chave 2, Palavra-chave 3, Palavra-chave 4
-% \end{keywords}
+% Palavras-chave (European Portuguese Keywords)
 \keywords{
-  Primeira palavra-chave \and
-  Outra palavra-chave \and
-  Mais uma palavra-chave \and
-  A última palavra-chave
+  Computação em Nuvem \and
+  Migração de Aplicações Web \and
+  Arquitetura de Software \and
+  Serviços na Nuvem
 }
 % to add an extra black line

@@ -8,36 +8,14 @@
 
 \typeout{NT FILE abstract-en.tex}%
 
-Regardless of the language in which the dissertation is written, usually there are at least two abstracts: one abstract in the same language as the main text, and another abstract in some other language.
+Cloud computing has become a cornerstone of modern software systems, offering organizations unparalleled flexibility, scalability and cost efficiency. As businesses increasingly shift from on-premises infrastructures to cloud-native architectures, traditional desktop applications face growing limitations in terms of accessibility, maintainability and integration with distributed services. Web-based solutions, supported by elastic cloud platforms, enable continuous availability, improved security practices and simplified deployment pipelines. This paradigm shift has established cloud computing not only as a technological trend but as a standard model for delivering reliable and user-centric software at scale.
 
-The abstracts' order varies with the school.  If your school has specific regulations concerning the abstracts' order, the \gls{novathesis} (\LaTeX) template will respect them.  Otherwise, the default rule in the \gls{novathesis} template is to have in first place the abstract in \emph{the same language as main text}, and then the abstract in \emph{the other language}. For example, if the dissertation is written in Portuguese, the abstracts' order will be first Portuguese and then English, followed by the main text in Portuguese. If the dissertation is written in English, the abstracts' order will be first English and then Portuguese, followed by the main text in English.
-%
-However, this order can be customized by adding one of the following to the file \verb+5_packages.tex+.
-
-\begin{verbatim}
-    \ntsetup{abstractorder={<LANG_1>,...,<LANG_N>}}
-    \ntsetup{abstractorder={<MAIN_LANG>={<LANG_1>,...,<LANG_N>}}}
-\end{verbatim}
-
-For example, for a main document written in German with abstracts written in German, English and Italian (by this order) use:
-\begin{verbatim}
-    \ntsetup{abstractorder={de={de,en,it}}}
-\end{verbatim}
-
-Concerning its contents, the abstracts should not exceed one page and may answer the following questions (it is essential to adapt to the usual practices of your scientific area):
-
-\begin{enumerate}
-  \item What is the problem?
-  \item Why is this problem interesting/challenging?
-  \item What is the proposed approach/solution/contribution?
-  \item What results (implications/consequences) from the solution?
-\end{enumerate}
+This thesis presents the design and migration of \sysname, a Java 8 desktop application originally built for local network environments, to a modern cloud-hosted web application. \sysname{} is a platform responsible for issuing invoicing documents, generating and communicating Standard Audit File for Tax (Portugal) files to the Portuguese Tax Authority, submitting Stamp Duty declarations and integrating invoicing data with banking and Customer Relationship Management systems through web services. The work includes defining a scalable and secure cloud-based architecture, redesigning the system into a modular web application and implementing a proof of concept that validates the proposed approach. This migration addresses the challenges of adapting a locally deployed, desktop-based solution to a distributed, service-oriented environment while preserving the robustness and reliability required for its operational context. The resulting solution demonstrates how legacy desktop applications can be successfully transformed to meet the demands of modern cloud-enabled ecosystems.
 
 % Abstract keywords
 \keywords{
-  One keyword \and
-  Another keyword \and
-  Yet another keyword \and
-  One keyword more \and
-  The last keyword
+  Cloud Computing \and
+  Web Application Migration \and
+  Software Architecture \and
+  Cloud Deployment
 }
