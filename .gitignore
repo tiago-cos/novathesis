@@ -7,7 +7,6 @@
 template.*
 # …except template.tex
 !template.tex
-!template.pdf
 
 # Ignore temp files
 .needlualatex
@@ -52,6 +51,7 @@ _minted-template
 *-blx.aux
 *-blx.bib
 *.run.xml
+biber
 
 ## Build tool auxiliary files:
 *.fdb_latexmk
@@ -343,7 +343,8 @@ TSWLatexianTemp*
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
